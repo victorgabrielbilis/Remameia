@@ -4,15 +4,15 @@
             <div id="navigation" class="navbar-collapse collapse">
               <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown active"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Home <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
+                  <!--<ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="index.html" class="nav-link">Option 1: Default Page</a></li>
                     <li class="dropdown-item"><a href="index2.html" class="nav-link">Option 2: Application</a></li>
                     <li class="dropdown-item"><a href="index3.html" class="nav-link">Option 3: Startup</a></li>
                     <li class="dropdown-item"><a href="index4.html" class="nav-link">Option 4: Agency</a></li>
                     <li class="dropdown-item"><a href="index5.html" class="nav-link">Option 5: Portfolio</a></li>
-                  </ul>
+                  </ul>-->
                 </li>
-                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Features<b class="caret"></b></a>
+                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Novidades<b class="caret"></b></a>
                   <ul class="dropdown-menu megamenu">
                     <li>
                       <div class="row">
@@ -42,7 +42,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Portfolio <b class="caret"></b></a>
+                <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Catálago <b class="caret"></b></a>
                   <ul class="dropdown-menu megamenu">
                     <li>
                       <div class="row">
@@ -77,7 +77,9 @@
                     </li>
                   </ul>
                 </li>
+
                 <!-- ========== FULL WIDTH MEGAMENU ==================-->
+                <!--
                 <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle">All Pages <b class="caret"></b></a>
                   <ul class="dropdown-menu megamenu">
                     <li>
@@ -168,13 +170,15 @@
                     </li>
                   </ul>
                 </li>
+                -->
                 <!-- ========== FULL WIDTH MEGAMENU END ==================-->
+
                 <!-- ========== Contact dropdown ==================-->
-                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Contact <b class="caret"></b></a>
+                <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Contato <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="contact.html" class="nav-link">Contact option 1</a></li>
-                    <li class="dropdown-item"><a href="contact2.html" class="nav-link">Contact option 2</a></li>
-                    <li class="dropdown-item"><a href="contact3.html" class="nav-link">Contact option 3</a></li>
+                    <li class="dropdown-item"><a href="contact.html" class="nav-link">Contact option 1(Alterar)</a></li>
+                    <li class="dropdown-item"><a href="contact2.html" class="nav-link">Contact option 2(Alterar)</a></li>
+                    <li class="dropdown-item"><a href="contact3.html" class="nav-link">Contact option 3(Alterar)</a></li>
                   </ul>
                 </li>
                 <!-- ========== Contact dropdown end ==================-->
