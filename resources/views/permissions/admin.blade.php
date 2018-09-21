@@ -22,8 +22,62 @@
               <p class="text-muted">O gráfico mostra a satifação dos seus clientes de acordo com seus produtos e entregas.</p>
               <div class="bo3">
                 <div class="heading">
-                  <h3 class="text-uppercase">Satisfação dos clientess</h3>
+                  <h3 class="text-uppercase">Satisfação dos clientes</h3>
                 </div>
+                <div id="customer-orders" class="col-md-9">
+                <div class="box mt-0 mb-lg-0">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Order</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th># 1735</th>
+                        <td>22/06/2013</td>
+                        <td>$ 150.00</td>
+                        <td><span class="badge badge-info">Preparando</span></td>
+                        <td><a href="customer-order.html" class="btn btn-template-outlined btn-sm">View</a></td>
+                      </tr>
+                      <tr>
+                        <th># 1735</th>
+                        <td>22/06/2013</td>
+                        <td>$ 150.00</td>
+                        <td><span class="badge badge-info">Preparando</span></td>
+                        <td><a href="customer-order.html" class="btn btn-template-outlined btn-sm">View</a></td>
+                      </tr>
+                      <tr>
+                        <th># 1735</th>
+                        <td>22/06/2013</td>
+                        <td>$ 150.00</td>
+                        <td><span class="badge badge-success">Enviado</span></td>
+                        <td><a href="customer-order.html" class="btn btn-template-outlined btn-sm">View</a></td>
+                      </tr>
+                      <tr>
+                        <th># 1735</th>
+                        <td>22/06/2013</td>
+                        <td>$ 150.00</td>
+                        <td><span class="badge badge-danger">Cancelado</span></td>
+                        <td><a href="customer-order.html" class="btn btn-template-outlined btn-sm">View</a></td>
+                      </tr>
+                      <tr>
+                        <th># 1735</th>
+                        <td>22/06/2013</td>
+                        <td>$ 150.00</td>
+                        <td><span class="badge badge-warning">Aguardando</span></td>
+                        <td><a href="customer-order.html" class="btn btn-template-outlined btn-sm">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
                 <!--<form>
                   <div class="row">
                     <div class="col-md-6">

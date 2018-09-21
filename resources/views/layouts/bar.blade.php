@@ -8,7 +8,7 @@
                 <li class="list-inline-item"><a href="#"><i class="fa fa-phone"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
               </ul>
-              <div class="login"><a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Entre agora</span></a><a href="customer-register.html" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Cadastre-se</span></a></div>
+              <div class="login"><a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Entre agora</span></a><a href="{{url('/register')}}" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Cadastre-se</span></a></div>
               <ul class="social-custom list-inline">
                 <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('permissions.admin');
 });
+
+Route::get('/register', function () {
+    return view('login.register');
+});
