@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/admin', function () {
+    return view('permissions.admin');
+});
