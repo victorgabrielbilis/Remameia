@@ -25,7 +25,7 @@
                   <h3 class="text-uppercase">Satisfação dos clientes</h3>
                 </div>
                 <div id="customer-orders" class="col-md-9">
-                <div class="box mt-0 mb-lg-0">
+                <div class="box mt-0 mb-lg-0"> teste
                 <div class="table-responsive">
                   <table class="table table-hover">
                     <thead>
