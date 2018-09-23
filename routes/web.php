@@ -22,3 +22,11 @@ Route::get('/admin', function () {
 Route::get('/register', function () {
     return view('login.register');
 });
+
+Route::get('/product', function () {
+    return view('shop.productDetail');
+});
+
+Route::get('/cart', function () {
+    return view('cart.shop_cart');
+});
