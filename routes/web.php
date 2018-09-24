@@ -30,3 +30,13 @@ Route::get('/product', function () {
 Route::get('/cart', function () {
     return view('cart.shop_cart');
 });
+
+Route::get('/payment', function () {
+    return view('cart.checkout1');
+});
+Route::get('/confirmation', function () {
+    return view('cart.checkout2');
+});
+Route::get('/completed', function () {
+    return view('cart.checkout3');
+});

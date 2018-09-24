@@ -62,6 +62,31 @@
                     </table>
                   </div>
                   <div class="col-lg-12">
+                    <p class="text-muted lead">Formas de entrega</p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <div class="box shipping-method">
+                          <h4>Sedex</h4>
+                          <p>1 à 7 dias.</p>
+                          <p>R$ 10.00</p>
+                          <div class="box-footer text-center">
+                            <input type="radio" name="delivery" value="delivery1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="box shipping-method">
+                          <h4>Expresso</h4>
+                          <p>1 à 4 dias.</p>
+                          <p>R$ 20.00</p>
+                          <div class="box-footer text-center">
+                            <input type="radio" name="delivery" value="delivery1">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
                     <p class="text-muted lead">Endereço de entrega</p>
                     <div class="table-responsive">
                       <table class="table">
