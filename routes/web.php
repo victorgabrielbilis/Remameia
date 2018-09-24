@@ -19,6 +19,10 @@ Route::get('/admin', function () {
     return view('permissions.admin');
 });
 
+Route::get('/entregador', function () {
+    return view('permissions.entregador');
+});
+
 Route::get('/register', function () {
     return view('login.register');
 });
