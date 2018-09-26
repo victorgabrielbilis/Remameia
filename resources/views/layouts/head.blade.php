@@ -3,6 +3,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap/css/bootstrap.min.css')}}">
     <!-- Font Awesome CSS-->
@@ -11,6 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <!-- Bootstrap Select-->
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap-select/css/bootstrap-select.min.css')}}">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- owl carousel-->
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.theme.default.css')}}">
@@ -18,6 +21,7 @@
     <link rel="stylesheet" href="{{URL::asset('css/style.default.css')}}" id="theme-stylesheet')}}">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="{{URL::asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
     <!-- Favicon and apple touch icons-->
     <link rel="shortcut icon" href="{{URL::asset('img/favicon.ico')}}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{URL::asset('img/apple-touch-icon.png')}}">
