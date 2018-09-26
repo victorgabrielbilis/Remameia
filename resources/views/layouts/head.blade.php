@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <!-- Bootstrap Select-->
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap-select/css/bootstrap-select.min.css')}}">
-
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- owl carousel-->
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.theme.default.css')}}">

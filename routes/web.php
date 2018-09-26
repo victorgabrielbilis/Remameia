@@ -44,3 +44,8 @@ Route::get('/confirmation', function () {
 Route::get('/completed', function () {
     return view('cart.checkout3');
 });
+Route::get('/deliver', function () {
+    return view('deliver.index');
+});
+
+

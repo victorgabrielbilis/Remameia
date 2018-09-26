@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master_simples')
 @section('content')
 <div id="heading-breadcrumbs">
         <div class="container">
