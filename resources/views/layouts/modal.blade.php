@@ -62,4 +62,30 @@
           </div>
         </div>
       </div>
-      <!--- Edit endereço modal end -->
+
+
+      <!--- Modal Produto(Delivery) -->
+      <div id="product-modal" tabindex="-1" role="dialog" aria-labelledby="product-modalLabel" aria-hidden="true" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="login-modalLabel" class="modal-title">Produto</h4>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <!-- Body do Modal -->
+            <div class="modal-body">
+              <!-- Colocar a imagem do produto -->
+              <img src="{{url('img/meia2.jpg')}}" alt="" class="img-fluid image1">
+              <!-- Trazer TODAS as inforamções do produto -->
+              <ol>
+                <li>ID da Compra: 201808093114982</li>
+                <li>ID Produto: 44282</li>
+                <li>Descrição: Camiseta Manga Curta</li>
+                <li>Marca: Nike</li>
+                <li>Cor: Preta</li>
+                <li>Estoque: 344</li>
+              </oi>
+            </div>
+          </div>
+        </div>
+      </div>

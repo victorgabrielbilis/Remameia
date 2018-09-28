@@ -19,14 +19,14 @@
               <div class="card text-white bg-primary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fa fa-comments"></i>
+                    <i class="fa fa-cubes"></i>
                   </div>
-                  <div class="mr-5">26 New Messages!</div>
+                  <div class="mr-5" style="font-weight: bold;">Preparar Entrega</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                  <span class="float-left">View Details</span>
+                <a class="card-footer text-black clearfix small z-1" href="/deliver/firststep">
+                  <span class="float-left">Clique aqui</span>
                   <span class="float-right">
-                    <i class="fas fa-angle-right"></i>
+                    <i class="fa fa-angle-right"></i>
                   </span>
                 </a>
               </div>
@@ -35,14 +35,14 @@
               <div class="card text-white bg-warning o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fa fa-list"></i>
+                    <i class="fa fa-truck"></i>
                   </div>
-                  <div class="mr-5">11 New Tasks!</div>
+                  <div class="mr-5" style="font-weight: bold;">Postar e Acompanhar envio</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                  <span class="float-left">View Details</span>
+                <a class="card-footer text-black clearfix small z-1" href="/deliver/secondstep">
+                  <span class="float-left">Clique aqui</span>
                   <span class="float-right">
-                    <i class="fas fa-angle-right"></i>
+                    <i class="fa fa-angle-right"></i>
                   </span>
                 </a>
               </div>
@@ -51,12 +51,12 @@
               <div class="card text-white bg-success o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-check-circle-o"></i>
                   </div>
-                  <div class="mr-5">123 New Orders!</div>
+                  <div class="mr-5" style="font-weight: bold;">Entregue com sucesso</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                  <span class="float-left">View Details</span>
+                <a class="card-footer text-black clearfix small z-1" href="/deliver/successful">
+                  <span class="float-left">Clique aqui</span>
                   <span class="float-right">
                     <i class="fa fa-angle-right"></i>
                   </span>
@@ -67,14 +67,14 @@
               <div class="card text-white bg-danger o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fa fa-life-ring"></i>
+                    <i class="fa fa-close"></i>
                   </div>
-                  <div class="mr-5">13 New Tickets!</div>
+                  <div class="mr-5" style="font-weight: bold;">Não entregue</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                  <span class="float-left">View Details</span>
+                <a class="card-footer text-black clearfix small z-1" href="/deliver/problem">
+                  <span class="float-left">Clique aqui</span>
                   <span class="float-right">
-                    <i class="fas fa-angle-right"></i>
+                    <i class="fa fa-angle-right"></i>
                   </span>
                 </a>
               </div>

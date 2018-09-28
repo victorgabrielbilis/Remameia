@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title></title>
     @include('layouts.head')
 
@@ -27,6 +31,16 @@
           margin-right: 10px;
           padding-top: 7px;
           border-radius: 50%;
+          }
+          .card-body-icon {
+          position: absolute;
+          z-index: 0;
+          top: -1.25rem;
+          right: -1rem;
+          opacity: 0.4;
+          font-size: 5rem;
+          -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
           }
         </style>
       </head>
