@@ -85,9 +85,9 @@
   <body>
     <div class="page-wrapper chiller-theme toggled">
       @include('layouts.sidebar')
-      @include('layouts.bar')
+      @include('layouts.bar_admin')
       @include('layouts.modal')
-      @include('layouts.navbar')
+  
 
       @yield('content')
       @include('layouts.footer')

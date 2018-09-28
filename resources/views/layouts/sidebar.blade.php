@@ -5,7 +5,7 @@
        <nav id="sidebar" class="sidebar-wrapper">
            <div class="sidebar-content">
                <div class="sidebar-brand">
-                   <a href="#">pro sidebar</a>
+                   <a href="#"></a>
                    <div id="close-sidebar">
                         <i class="fa fa-times"></i>
                     </div>
@@ -15,21 +15,15 @@
                        <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/bootstrap4/assets/img/user.jpg" alt="User picture">
                    </div>
                    <div class="user-info">
-                       <span class="user-name">Jhon
-                           <strong>Smith</strong>
-                       </span>
-                       <span class="user-role">Administrator</span>
-                       <span class="user-status">
-                           <i class="fa fa-circle"></i>
-                           <span>Online</span>
-                       </span>
+                       <span class="user-name">Victor Gabriel</span>
+                       <span class="user-role">Administrador</span>
                    </div>
                </div>
                <!-- sidebar-header  -->
                <div class="sidebar-search">
                    <div>
                        <div class="input-group">
-                           <input type="text" class="form-control search-menu" placeholder="Search...">
+                           <input type="text" class="form-control search-menu" placeholder="Procurar...">
                            <div class="input-group-append">
                                <span class="input-group-text">
                                    <i class="fa fa-search" aria-hidden="true"></i>
@@ -42,7 +36,7 @@
                <div class="sidebar-menu">
                    <ul>
                        <li class="header-menu">
-                           <span>General</span>
+                           <span>Menu</span>
                        </li>
                        <li class="sidebar-dropdown">
                            <a href="#">
