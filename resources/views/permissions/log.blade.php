@@ -3,6 +3,8 @@
 <script type="text/javascript">
 $(document).ready( function () {
   $('#table_id').DataTable();
+  $('#preco_inserir').maskMoney();
+  $('.js-example-basic-single').select2();
 } );
 </script>
 <div id="heading-breadcrumbs">
@@ -19,7 +21,7 @@ $(document).ready( function () {
           <br>
           <div class="row">
             <div class="col-md-2 col-sm-3">
-              <a href="#" class="btn btn-primary btn-custom">
+              <a href="#" data-toggle="modal" data-target="#produto-modal" class="btn btn-primary btn-custom">
               <span class="fa fa-plus-circle img-circle btn-icon"></span>
               Adicionar
               </a>
@@ -42,6 +44,7 @@ $(document).ready( function () {
                     <th>Modelo</th>
                     <th>Marca</th>
                     <th>Preço</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -53,6 +56,7 @@ $(document).ready( function () {
                     <td>{{$product->StrModelo}}</td>
                     <td>{{$product->StrMarca}}</td>
                     <td>{{$product->DecPreco}}</td>
+                    <td><a href="#" data-toggle="modal" data-target="#end-modal"><i class="fa fa-edit"></i></a></td>
                 </tr>
                 @endforeach
             </tbody>

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap/css/bootstrap.min.css')}}">
     <!-- Font Awesome CSS-->
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap-select/css/bootstrap-select.min.css')}}">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <!-- owl carousel-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.theme.default.css')}}">
     <!-- theme stylesheet-->
