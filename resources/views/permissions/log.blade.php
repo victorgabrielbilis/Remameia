@@ -17,9 +17,26 @@ $(document).ready( function () {
       <div id="content">
         <div class="container">
           <br>
+          <div class="row">
+            <div class="col-md-2 col-sm-3">
+              <a href="#" class="btn btn-primary btn-custom">
+              <span class="fa fa-plus-circle img-circle btn-icon"></span>
+              Adicionar
+              </a>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <a href="#" class="btn btn-danger btn-custom">
+              <span class="fa fa-trash img-circle btn-icon"></span>
+              Excluir
+              </a>
+            </div>
+          </div>
+          <br>
+          <input type="checkbox" name="line"> Selecionar todos <br><br>
           <table id="table_id" class="display">
             <thead>
                 <tr>
+                    <th></th>
                     <th>Código</th>
                     <th>Produto</th>
                     <th>Modelo</th>
@@ -30,6 +47,7 @@ $(document).ready( function () {
             <tbody>
                 @foreach(App\Product::where("StrActive","Y")->get() as $product)
                 <tr>
+                    <td><input type="checkbox" name="line"></td>
                     <td>{{$product->id}}</td>
                     <td>{{$product->StrName}}</td>
                     <td>{{$product->StrModelo}}</td>

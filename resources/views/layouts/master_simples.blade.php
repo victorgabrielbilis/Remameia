@@ -32,6 +32,14 @@
           padding-top: 7px;
           border-radius: 50%;
           }
+          .btn-custom {
+          	padding: 1px 15px 3px 2px;
+          	border-radius: 50px;
+          }
+
+          .btn-icon {
+          	padding: 8px;
+          }
           .card-body-icon {
           position: absolute;
           z-index: 0;
