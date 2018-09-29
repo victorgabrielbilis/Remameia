@@ -87,7 +87,6 @@
       @include('layouts.sidebar')
       @include('layouts.bar_admin')
       @include('layouts.modal')
-  
 
       @yield('content')
       @include('layouts.footer')

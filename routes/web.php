@@ -19,6 +19,10 @@ Route::get('/admin', function () {
     return view('permissions.admin');
 });
 
+Route::get('/log', function () {
+    return view('permissions.log');
+});
+
 Route::get('/entregador', function () {
     return view('permissions.entregador');
 });
@@ -61,5 +65,3 @@ Route::get('/deliver/successful', function () {
 Route::get('/deliver/problem', function () {
     return view('deliver.problem');
 });
-
-

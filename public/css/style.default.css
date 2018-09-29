@@ -3,7 +3,7 @@
 ==================================================================================
 ==================================================================================
 
-Universal Template 
+Universal Template
 
 https://bootstrapious.com/p/universal-business-e-commerce-template
 
@@ -1276,7 +1276,7 @@ header.nav-holder.sticky {
 }
 
 .box-simple.box-white {
-  border: dotted 1px #999;
+  border: solid 1px #999;
   padding: 15px 20px;
   margin-bottom: 0;
 }
@@ -1292,7 +1292,7 @@ header.nav-holder.sticky {
 }
 
 .box-simple.box-dark {
-  border: dotted 1px #999;
+  border: solid 1px #999;
   padding: 15px 20px;
   margin-bottom: 0;
   color: #fff;
@@ -3016,7 +3016,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 /*
- * 3. TYPE  
+ * 3. TYPE
  */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;

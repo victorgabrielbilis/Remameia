@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <!-- Bootstrap Select-->
     <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap-select/css/bootstrap-select.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <!-- owl carousel-->
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{URL::asset('vendor/owl.carousel/assets/owl.theme.default.css')}}">
