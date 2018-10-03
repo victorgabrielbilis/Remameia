@@ -9,6 +9,7 @@
           </div>
         </div>
       </div>
+      <br>
       <div id="content">
           <div id="content-wrapper">
 
@@ -34,7 +35,7 @@
                     <tr>
                       <th>Código da compra</th>
                       <th>Produto</th>
-                      <th>Quantidade</th>
+                      <th>QTD.</th>
                       <th>Data da compra</th>
                       <th>SLA</th>
                       <th>Etapa</th>
@@ -44,7 +45,7 @@
                    <tr>
                       <th>Código da compra</th>
                       <th>Produto</th>
-                      <th>Quantidade</th>
+                      <th>QTD.</th>
                       <th>Data da compra</th>
                       <th>SLA</th>
                       <th>Etapa</th>
@@ -56,7 +57,7 @@
                       <!-- Mostrará a compra em um modal(product-modal), com click do mouse e armazenará o ID da compra -->
                       <td id="ID_Compra"><a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">201808093114982</a></td>
                       <!-- Descrição do produto pegará do BD, a partir do value da linha -->
-                      <td id="Descrição_Produto_BD">(Descrição)Produto</td>
+                      <td id="Descricao_Produto_BD">Meia Azul</td>
                       <!-- Quantidade da compra pegará da compra, buscando pela variavel que pegaremos no ID da compra(primeira linha da tabela) -->
                       <td id="Quantidade_Compra">2</td>
                       <!-- Data da compra pegará da compra, buscando pela variavel que pegaremos no ID da compra(primeira linha da tabela) -->
@@ -64,9 +65,9 @@
                       <td id="SLA_Compra">02/02/2018 14:40:00</td>
                       <td>
                         <select class="custom-select">
-                          <option value="1">1.Preparar</option>
-                          <option value="2">2.Produto acessível</option>
-                          <option value="3">3.Produto preparado para envio</option>
+                          <option value="04">1.Preparar</option>
+                          <option value="05">2.Produto embalado</option>
+                          <option value="06">3.Postado</option>
                         </select>
                       </td>
                     </tr>

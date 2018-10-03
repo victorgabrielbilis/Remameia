@@ -82,6 +82,7 @@
     });
       </script>
   </head>
+   @include('layouts.functions')
   <body>
     <div class="page-wrapper chiller-theme toggled">
       @include('layouts.sidebar')

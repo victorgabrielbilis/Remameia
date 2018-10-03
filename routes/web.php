@@ -62,4 +62,3 @@ Route::get('/deliver/problem', function () {
     return view('deliver.problem');
 });
 
-

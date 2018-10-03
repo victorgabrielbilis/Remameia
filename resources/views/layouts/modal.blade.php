@@ -75,10 +75,16 @@
             <!-- Body do Modal -->
             <div class="modal-body">
               <!-- Colocar a imagem do produto -->
-              <img src="{{url('img/meia2.jpg')}}" alt="" class="img-fluid image1">
+              <img src="{{url('img/meia2.jpg')}}" alt="" class="img-fluid image1" style="padding-left:60px;padding-bottom: 5px;width: 400px;height: 400px;"> 
               <!-- Trazer TODAS as inforamções do produto -->
               <ol>
                 <li>ID da Compra: 201808093114982</li>
+                <li>Nome do cliente: Carlos Pericles</li>
+                <li>E-mail:carlos.pericles@gmail.com</li>
+                <li>Endereço: Rua tapajos 230</li>
+                <li>Bairro: Jardim Europa</li>
+                <li>CEP:213213-213</li>
+                <li>Bairro: Jardim Europa</li>
                 <li>ID Produto: 44282</li>
                 <li>Descrição: Camiseta Manga Curta</li>
                 <li>Marca: Nike</li>
