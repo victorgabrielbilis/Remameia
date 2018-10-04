@@ -95,3 +95,52 @@
           </div>
         </div>
       </div>
+      <!--
+      <!--- Adicionar produto modal -->
+      <div id="produto-modal" tabindex="-1" role="dialog" aria-labelledby="end-modalLabel" aria-hidden="true" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="login-modalLabel" class="modal-title">Inserir Produto</h4>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <form action="customer-orders.html" method="get">
+                <div class="form-group">
+                  Imagem<input id="file" type="file" class="form-control">
+                </div>
+                <div class="form-group">
+                  Produto:<input id="cep" type="text" placeholder="00000-000" class="form-control">
+                </div>
+                <div class="form-group">
+                  Descrição:<input id="rua" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  Modelo: <br>
+                  <input type="checkbox" id="modelo_p" > P &nbsp
+                  <input type="checkbox" id="modelo_p" > M &nbsp
+                  <input type="checkbox" id="modelo_p" > G &nbsp
+                  <input type="checkbox" id="modelo_p" > GG &nbsp
+                  <input type="checkbox" id="modelo_p" > XG &nbsp
+                </div>
+                <div class="form-group">
+                  Preço:<input id="preco_inserir" type="text" data-thousands="" data-decimal="," class="form-control">
+                </div>
+                <div class="form-group">
+                  Marca:<input id="marca" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                <select class="js-example-basic-single" name="category">
+                  @foreach(App\Category::where("StrActive","Y")->get() as $category)
+                  <option value="{{$category->id}}">{{$category->StrName}}</option>
+                  @endforeach
+                </select>
+              </div>
+                <p class="text-center">
+                  <button class="btn btn-template-outlined"><i class="fa fa-check"></i> Editar endereço de entrega</button>
+                </p>
+              </form>
+              </div>
+          </div>
+        </div>
+      </div>

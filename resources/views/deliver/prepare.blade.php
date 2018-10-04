@@ -11,11 +11,12 @@
       </div>
       <br>
       <div id="content">
-          <div id="content-wrapper">
+      <div class="container">
+        <div class="row">
 
-        <div class="container-fluid">
+          <div class="col-md-12">
 
-          <!-- Breadcrumbs-->
+
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="/deliver">Dashboard</a>
@@ -24,7 +25,6 @@
           </ol>
 
           <!-- DataTables Example -->
-          <div class="card mb-3">
             <div class="card-header">
               <i class="fa fa-table"></i>
               Tabela</div>
@@ -131,12 +131,12 @@
                 </table>
               </div>
             </div>
-      
-      </div>
+
     </div>
-  </div>
-</div>
+    </div>
+    </div>
+    </div>
+
 
 <br>
 @endsection
-

@@ -32,6 +32,14 @@
           padding-top: 7px;
           border-radius: 50%;
           }
+          .btn-custom {
+          	padding: 1px 15px 3px 2px;
+          	border-radius: 50px;
+          }
+
+          .btn-icon {
+          	padding: 8px;
+          }
           .card-body-icon {
           position: absolute;
           z-index: 0;
@@ -86,9 +94,8 @@
   <body>
     <div class="page-wrapper chiller-theme toggled">
       @include('layouts.sidebar')
-      @include('layouts.bar')
+      @include('layouts.bar_admin')
       @include('layouts.modal')
-      @include('layouts.navbar')
 
       @yield('content')
       @include('layouts.footer')

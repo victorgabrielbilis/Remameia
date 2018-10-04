@@ -20,10 +20,7 @@
               <a href="/deliver">Dashboard</a>
             </li>
             <li class="breadcrumb-item active">Tabela</li>
-          </ol>
-        @php
-
-        @endphp    
+          </ol>  
           <!-- DataTables Example -->
           <div class="card mb-3">
             <div class="card-header">
