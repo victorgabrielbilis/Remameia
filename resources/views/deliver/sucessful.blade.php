@@ -72,14 +72,14 @@
                       <td>
 
                         <select class="custom-select" id="select_linha">
-                          <option value="06" selected>1.Concluído</option>
-                          <option value="07">
+                          <option value="08" selected>1.Concluído</option>
+                          <option value="10">
                           2.Promoções</option>
                         </select>
                       </td>
                     </tr>
                     <tr>
-                      <td>Garrett Winters</td>
+                      <td>201808093114992</td>
                       <td>Accountant</td>
                       <td>Tokyo</td>
                       <td>63</td>

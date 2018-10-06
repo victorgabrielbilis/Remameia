@@ -144,3 +144,20 @@
           </div>
         </div>
       </div>
+
+
+      <!--- Failure (Delivery) -->
+      <div id="failure-modal" tabindex="-1" role="dialog" aria-labelledby="product-modalLabel" aria-hidden="true" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="login-modalLabel" class="modal-title">Produto</h4>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <!-- Body do Modal -->
+            <div class="modal-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>

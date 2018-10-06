@@ -28,6 +28,13 @@
               Tabela</div>
             <div class="card-body">
               <div class="table-responsive">
+                <input type="text" id="myInput" onkeyup="Filtro()" placeholder="Search.." style="background-image: url('img/search.jpg');background-position: 10px 10px;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 12px 20px 12px 40px;
+                    border: 1px solid #ddd;
+                    margin-bottom: 12px;">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
