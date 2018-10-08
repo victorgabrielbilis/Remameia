@@ -57,23 +57,37 @@ $(document).ready( function () {
                   </tfoot>
 
                   <tbody>
-                     @foreach(App\Shop::where("IntFrkIdStage","9")->get() as $shop)
+                     @foreach(App\Shop::where("IntFrkIdStage","9")->get() as $shop) 
                 <tr>
+                    @php
+                    $arr = array(9,10,11,12);
+                    $i = 9;
+                    $id = $shop->IntFrkIdProd;
+                    @endphp
+                    @foreach(App\Product::where("id","$id")->get() as $product)
                     <td><a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">{{$shop->StrCodSale}}</td>
-                    <td>{{$shop->IntFrkIdProd}}</td>
+                    <td>{{$product->StrName}}</td>
                     <td>{{$shop->IntQuantity}}</td>
                     <td>{{$shop->DateShop}}</td>
                     <td>{{$shop->DecFinalPrice}}</td>
                     <td>
-                          <select class="custom-select" onChange="cod_rastreio()" id="select_linha">
-                          <option value="08" selected>1.Falha</option>
-                          <option value="11">2.Contato cliente</option>
-                          <option value="12">3.Reembolsar</option>
-                          <option value="13">4.Reenviar</option>
+                          <select class="custom-select" onChange="stage()" id="select_linha">
+                              @php
+                              while ($i < 13){
+                              $__currentLoopData = App\Stage::where("id","$i")->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $stage): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop();
+                              $i++;
+                              echo "<option value='$stage->id'>$stage->StrStage</option>";
+                              endforeach; $__env->popLoop(); $loop = $__env->getLastLoop();
+                              }
+                              @endphp
+                              
+
+
                         </select>
                       </td>
-
+                            
                 </tr>
+                @endforeach
                 @endforeach
             <!--
                     <tr>
