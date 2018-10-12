@@ -65,7 +65,7 @@
 
 
       <!--- Modal Produto(Delivery) -->
-      <div id="product-modal" tabindex="-1" role="dialog" aria-labelledby="product-modalLabel" aria-hidden="true" class="modal fade">
+      <div id="product-modal2" tabindex="-1" role="dialog" aria-labelledby="product-modalLabel" aria-hidden="true" class="modal fade">
         <div role="document" class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -74,6 +74,7 @@
             </div>
             <!-- Body do Modal -->
             <div class="modal-body">
+              Teste($cod);
               <!-- Colocar a imagem do produto -->
               <img src="{{url('img/meia2.jpg')}}" alt="" class="img-fluid image1" style="padding-left:60px;padding-bottom: 5px;width: 400px;height: 400px;"> 
               <!-- Trazer TODAS as inforamções do produto -->

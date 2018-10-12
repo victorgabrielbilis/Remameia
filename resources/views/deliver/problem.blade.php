@@ -7,6 +7,7 @@ $(document).ready( function () {
 // Pegando os dados do Modal
   @php
     function Teste($cod){
+      // ------------------------- Pega informações do Banco de Dados -------------------------
       $shop = DB::table('shops')->where('id', $cod)->first();
       $StrCodSale = $shop->StrCodSale;
       $DateShop = $shop->DateShop;
@@ -23,6 +24,7 @@ $(document).ready( function () {
       $StrLastClient = $client->StrLastName;
       $StrEmail = $client->StrEmail;
       $StrCity = $client->StrCity;
+      $StrCEP = $client->StrCep;
       $StrState = $client->StrState;
       $StrStreet = $client->StrStreet;
       $StrEmail = $client->StrEmail;
@@ -34,20 +36,60 @@ $(document).ready( function () {
       $StrNameProduct = $product->StrName;
       $StrDescProduct = $product->StrDesc;
       $StrMarcaProduct = $product->StrMarca;
-
-      //echo "document.getElementById('InpTemp').value = '{$StrFirstClient}'";
-
-      echo ("document.getElementById('InpTemp').value ='{$StrFirstClient}'");
+      
+      // ------------------------- Adiciona informações ao Modal -------------------------
+      echo ("document.getElementById('ModalCodSale').innerHTML = 'Código: {$StrCodSale}';");
+      echo ("document.getElementById('ModalNameClient').innerHTML = 'Nome Completo: {$StrFirstClient} {$StrLastClient}';");
+      echo ("document.getElementById('ModalEmail').innerHTML = 'E-mail: {$StrEmail}';");
+      echo ("document.getElementById('ModalAdress').innerHTML = 'Endereço: {$StrStreet}';");
+      echo ("document.getElementById('ModalCEP').innerHTML = 'CEP: {$StrCEP}';");
+      echo ("document.getElementById('ModalIDProduct').innerHTML = 'ID Produto: {$IntFrkIdProd}';");
+      echo ("document.getElementById('ModalDescProduct').innerHTML = 'Descrição do Produto: {$StrDescProduct}';");
+      echo ("document.getElementById('ModalBrand').innerHTML = 'Marca: {$StrMarcaProduct}';");
+      echo ("document.getElementById('ModalColor').innerHTML = 'Cor: {$StrMarcaProduct}';");
+      //Mostrar código no Console - echo ("console.log('myObj');");
+      
     }
+
   @endphp
     
     
 </script>
+<!-- Modal Produto -->
+<div id="product-modal" tabindex="-1" role="dialog" aria-labelledby="product-modalLabel" aria-hidden="true" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 id="login-modalLabel" class="modal-title">Produto</h4>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <!-- Body do Modal -->
+            <div class="modal-body">
+              <!-- Colocar a imagem do produto -->
+              <img src="{{url('img/meia2.jpg')}}" alt="" class="img-fluid image1" style="padding-left:60px;padding-bottom: 5px;width: 400px;height: 400px;"> 
+              <!-- Trazer TODAS as inforamções do produto -->
+              <ol>
+                <li id="ModalCodSale"></li>
+                <li id="ModalNameClient"></li>
+                <li id="ModalEmail"></li>
+                <li id="ModalAdress"></li>
+                <li id="ModalCEP"></li>
+                <li id="ModalIDProduct"></li>
+                <li id="ModalDescProduct"></li>
+                <li id="ModalBrand"></li>
+                <li id="ModalColor"></li>
+                <li>Estoque: 344</li>
+              </oi>
+            </div>
+          </div>
+        </div>
+      </div>
+
 <div id="heading-breadcrumbs">
         <div class="container">
           <div class="row d-flex align-items-center flex-wrap">
             <div class="col-md-7">
-              <h1 class="h2">Sucesso</h1>
+              <h1 class="h2">Erro</h1>
             </div>
           </div>
         </div>
@@ -102,7 +144,7 @@ $(document).ready( function () {
                       $id = $shop->IntFrkIdProd;
                     @endphp
                     @foreach(App\Product::where("id","$id")->get() as $product)
-                    <td><a href="#" id="{{$CodSale2 = $shop->id}}" onclick="{{Teste($CodSale2)}}"><!--<a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">-->{{$shop->StrCodSale}}</td>
+                    <td><a href="#" id="{{$CodSale2 = $shop->id}}" onclick="{{Teste($CodSale2)}}" href="#" data-toggle="modal" data-target="#product-modal" class="login-btn"><!--<a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">-->{{$shop->StrCodSale}}</td>
                     <td>{{$product->StrName}}</td>
                     <td>{{$shop->IntQuantity}}</td>
                     <td>{{$shop->DateShop}}</td>
@@ -126,13 +168,6 @@ $(document).ready( function () {
                 </tr>
                 @endforeach
                 @endforeach
-                <tr>
-                       <td>
-                      <div id="DivTemp"> 
-                      <input type="text" id="InpTemp">                    
-                      </div>
-                    </td>
-                </tr>
                         
             <!--
                     <tr>
