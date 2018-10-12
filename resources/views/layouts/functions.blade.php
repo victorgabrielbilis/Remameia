@@ -2,7 +2,7 @@
   var VarCodRatreio = document.getElementById("input_codRastreio");
   
 
-  function cod_rastreio(){
+  function stage(){
 	  var x = document.getElementById("select_linha").value;
 	  if (x == 7) {
 	  	document.getElementById("input_codRastreio").innerHTML = "<div id='InpCodRastreio'><input type='text' id='Input'></div>";
@@ -22,5 +22,4 @@
  	var VarDataPrevista = document.getElementById("DivDataPrevista");
   document.getElementById("DivDataPrevista").innerHTML = "<input type='date' id='DatePrevista'>";
 });
- 
 </script>

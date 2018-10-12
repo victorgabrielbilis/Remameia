@@ -3,8 +3,45 @@
 <script type="text/javascript">
 $(document).ready( function () {
   $('#table_id').DataTable();
-  
 } );
+// Pegando os dados do Modal
+  @php
+    function Teste($cod){
+      $shop = DB::table('shops')->where('id', $cod)->first();
+      $StrCodSale = $shop->StrCodSale;
+      $DateShop = $shop->DateShop;
+      $IntQuantity = $shop->IntQuantity;
+      $DateShop = $shop->DateShop;
+      $DateRealDeliver = $shop->DateRealDeliver;
+      $DecFinalPrice = $shop->DecFinalPrice;
+      $IntFrkIdStage = $shop->IntFrkIdStage;
+      $IntFrkIdUser = $shop->IntFrkIdUser;
+      $IntFrkIdProd = $shop->IntFrkIdProd;
+
+      $client = DB::table('users')->where('id', $IntFrkIdUser)->first();
+      $StrFirstClient = $client->StrName;
+      $StrLastClient = $client->StrLastName;
+      $StrEmail = $client->StrEmail;
+      $StrCity = $client->StrCity;
+      $StrState = $client->StrState;
+      $StrStreet = $client->StrStreet;
+      $StrEmail = $client->StrEmail;
+
+      $stage = DB::table('stages')->where('id', $IntFrkIdStage)->first();
+      $StrStage = $stage->StrStage;
+
+      $product = DB::table('products')->where('id', $IntFrkIdProd)->first();
+      $StrNameProduct = $product->StrName;
+      $StrDescProduct = $product->StrDesc;
+      $StrMarcaProduct = $product->StrMarca;
+
+      //echo "document.getElementById('InpTemp').value = '{$StrFirstClient}'";
+
+      echo ("document.getElementById('InpTemp').value ='{$StrFirstClient}'");
+    }
+  @endphp
+    
+    
 </script>
 <div id="heading-breadcrumbs">
         <div class="container">
@@ -60,35 +97,43 @@ $(document).ready( function () {
                      @foreach(App\Shop::where("IntFrkIdStage","9")->get() as $shop) 
                 <tr>
                     @php
-                    $arr = array(9,10,11,12);
-                    $i = 9;
-                    $id = $shop->IntFrkIdProd;
+
+                      $i = 9;
+                      $id = $shop->IntFrkIdProd;
                     @endphp
                     @foreach(App\Product::where("id","$id")->get() as $product)
-                    <td><a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">{{$shop->StrCodSale}}</td>
+                    <td><a href="#" id="{{$CodSale2 = $shop->id}}" onclick="{{Teste($CodSale2)}}"><!--<a href="#" data-toggle="modal" data-target="#product-modal" class="login-btn">-->{{$shop->StrCodSale}}</td>
                     <td>{{$product->StrName}}</td>
                     <td>{{$shop->IntQuantity}}</td>
                     <td>{{$shop->DateShop}}</td>
                     <td>{{$shop->DecFinalPrice}}</td>
                     <td>
-                          <select class="custom-select" onChange="stage()" id="select_linha">
+                          <select class="custom-select" id="select_linha">
                               @php
-                              while ($i < 13){
-                              $__currentLoopData = App\Stage::where("id","$i")->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $stage): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop();
-                              $i++;
-                              echo "<option value='$stage->id'>$stage->StrStage</option>";
-                              endforeach; $__env->popLoop(); $loop = $__env->getLastLoop();
-                              }
-                              @endphp
-                              
+                                while ($i < 13){
+                                  $__currentLoopData = App\Stage::where("id","$i")->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $stage): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop();
 
+                                  $i++;
+
+                                    echo "<option value='$stage->id'>$stage->StrVisible</option>";
+                                  endforeach; $__env->popLoop(); $loop = $__env->getLastLoop();
+                                }
+                              @endphp
 
                         </select>
                       </td>
-                            
+ 
                 </tr>
                 @endforeach
                 @endforeach
+                <tr>
+                       <td>
+                      <div id="DivTemp"> 
+                      <input type="text" id="InpTemp">                    
+                      </div>
+                    </td>
+                </tr>
+                        
             <!--
                     <tr>
                        Mostrará a compra em um modal(product-modal), com click do mouse e armazenará o ID da compra 
@@ -110,55 +155,6 @@ $(document).ready( function () {
                         </select>
                       </td>
               -->
-                    </tr>
-                    <tr>
-                      <td>Ashton Cox</td>
-                      <td>Junior Technical Author</td>
-                      <td>San Francisco</td>
-                      <td>2009/01/12</td>
-                      <td>$86,000</td>
-                      <td>$86,000</td>
-                    </tr>
-                    <tr>
-                      <td>Cedric Kelly</td>
-                      <td>Senior Javascript Developer</td>
-                      <td>Edinburgh</td>
-                      <td>2012/03/29</td>
-                      <td>$433,060</td>
-                      <td>$86,000</td>
-                    </tr>
-                    <tr>
-                      <td>Airi Satou</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>2008/11/28</td>
-                      <td>$162,700</td>
-                      <td>$86,000</td>
-                    </tr>
-                    <tr>
-                      <td>Brielle Williamson</td>
-                      <td>Integration Specialist</td>
-                      <td>New York</td>
-                      <td>2012/12/02</td>
-                      <td>$372,000</td>
-                      <td>$86,000</td>
-                    </tr>
-                    <tr>
-                      <td>Herrod Chandler</td>
-                      <td>Sales Assistant</td>
-                      <td>San Francisco</td>
-                      <td>2012/08/06</td>
-                      <td>$137,500</td>
-                      <td>$86,000</td>
-                    </tr>
-                    <tr>
-                      <td>Rhona Davidson</td>
-                      <td>Integration Specialist</td>
-                      <td>Tokyo</td>
-                      <td>2010/10/14</td>
-                      <td>$327,900</td>
-                      <td>$86,000</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -168,7 +164,6 @@ $(document).ready( function () {
     </div>
   </div>
 </div>
-
 <br>
 @endsection
 
